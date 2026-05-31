@@ -19,7 +19,6 @@ public:
 };
 // ==========================================
 // 2. LOCAL TEST RUNNER
-// (This stays on your machine)
 // ==========================================
 int main() {
     Solution solution;
