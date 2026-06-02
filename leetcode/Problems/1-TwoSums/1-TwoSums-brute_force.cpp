@@ -7,16 +7,19 @@ class Solution {
 public:
     std::vector<int> twoSum(std::vector<int>& nums, int target)
     {
-        std::vector<int> tagretSumIndeces = {0, 0};
+        // initialize the vector to include indices
+        std::vector<int> tagretSumIndices = {0, 0};
+        // loop over items on the nums array
         for (int i = 0; i < nums.size(); i++)
         {
+            // loop over the all the items after i to see if taget is met
             for (int j = i + 1; j < nums.size(); j++)
             {
-                //if (j != nums.size() - 1)
                 if (nums[i] + nums[j] == target)
                 {
-                    tagretSumIndeces = {i, j};
-                    return tagretSumIndeces;
+                    // fill the indices in the vector and return the result
+                    tagretSumIndices = {i, j};
+                    return tagretSumIndices;
                 }
             }
         }
